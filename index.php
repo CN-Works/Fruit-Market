@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <div class="container">
+    <main class="container">
         <!-- Title -->
         <h1>Add a fruit</h1>
 
@@ -48,6 +48,6 @@
                 <input type="submit" name="submit" value="Add fruit">
             </p>
         </form>
-    </div>
+    </main>
 </body>
 </html>
