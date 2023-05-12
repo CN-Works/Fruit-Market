@@ -65,3 +65,12 @@ body {
     text-align: center;
     margin: 2px;
 }
+
+.submit-button {
+    border: none;
+    background-color: #1D3557;
+    color: #F1FAEE;
+    margin: 15px 0;
+    width: 50%;
+    /* Design */
+}
