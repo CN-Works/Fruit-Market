@@ -75,10 +75,12 @@ body {
 /* Text, number inner padding */
 input[type=text] {
     padding: 0 5px;
+    color: #36609a;
 }
 
 input[type=number] {
     padding: 0 5px;
+    color: #36609a;
 }
 
 .input-title {
