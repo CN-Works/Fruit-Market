@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #E63946;
+    background-color: #1D3557;
 }
 
 .container {
@@ -30,15 +30,15 @@ body {
 
 .main-title {
     padding: 10px 0;
-    color: #264775;
+    color: #E63946;
     text-align: center;
 }
 
 .input-button {
-
+    border: none;
 }
 
 .input-title {
-    color: #1c67d0;
+    color: #1a5cb7;
     text-align: center;
 }
