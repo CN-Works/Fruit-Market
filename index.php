@@ -24,12 +24,12 @@
                 <!-- Fruit selection -->
                 <div class="inputs">
                     <p class="input-title">Fruit name :</p>
-                    <input class="input-button" type="text" name="name">
+                    <input class="input-button" type="text" name="name" placeholder="Insert a name">
                 </div>
 
                 <!-- Setting a price -->
                 <div class="inputs">
-                    <p class="input-title">Fruit price :</p>
+                    <p class="input-title">Price :</p>
                     <input class="input-button" type="number" min="0" step="any" name="price">
                 </div>
 
