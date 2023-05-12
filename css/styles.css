@@ -67,7 +67,7 @@ body {
     width: 95%;
     border-radius: 4px;
     margin: 3px 0;
-    transition: transform 0.5S;
+    transition: transform 0.5S, border-color 0.2s;
 }
 
 .input-button:hover {
