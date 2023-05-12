@@ -34,7 +34,7 @@
                 <!-- Choosing a quantity -->
                 <div class="inputs">
                     <p class="input-title">Quantity :</p>
-                    <input class="input-button" type="number" name="quantity" value="1">
+                    <input class="input-button" type="number" name="quantity" value="0">
                 </div>
 
                 <!-- Submit button -->
