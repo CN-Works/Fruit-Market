@@ -6,15 +6,35 @@
 }
 
 body {
-    background-color: #35605A;
+    background-color: #E63946;
+}
+
+.container {
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.container {
-    background-color: #6B818C;
-    height: 80vh;
-    width: 80%;
+.central-box {
+    background-color: #F1FAEE;
+    padding: 25px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-title {
+    padding: 10px 5px;
+    color: #264775;
+}
+
+.input-button {
+
+}
+
+.input-title {
+    color: #1c67d0;
+    text-align: center;
 }
