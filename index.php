@@ -28,13 +28,13 @@
                 <!-- Setting a price -->
                 <div class="inputs">
                     <p class="input-title">Fruit price :</p>
-                    <input type="number" step="any" name="price">
+                    <input class="input-button" type="number" step="any" name="price">
                 </div>
 
                 <!-- Choosing a quantity -->
                 <div class="inputs">
                     <p class="input-title">Quantity :</p>
-                    <input type="number" name="quantity" value="1">
+                    <input class="input-button" type="number" name="quantity" value="1">
                 </div>
 
                 <!-- Submit button -->
