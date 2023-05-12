@@ -19,34 +19,26 @@
         <!-- Global form -->
         <form action="traitement.php" method="post">
             <!-- Fruit selection -->
-            <p>
-                <label>
-                    Fruit name :
-                    <input type="text" name="name">
-                </label>
-            </p>
+            <div class="input-section">
+                <p class="input-title">Fruit name :</p>
+                <input type="text" name="name">
+            </div>
 
             <!-- Setting a price -->
-            <p>
-                <label>
-                    Fruit price :
-                    <input type="number" step="any" name="price">
-                </label>
-            </p>
+            <div class="input-section">
+                <p class="input-title">Fruit price :</p>
+                <input type="number" step="any" name="price">
+            </div>
 
             <!-- Choosing a quantity -->
-            <p>
-                <label>
-                    Quantity :
-                    <input type="number" name="quantity" value="1">
-                </label>
-
-            </p>
+            <div class="input-section">
+                <p class="input-title">Quantity :</p>
+                <input type="number" name="quantity" value="1">
+            </div>
 
             <!-- Submit button -->
-            <p>
-                <input type="submit" name="submit" value="Add fruit">
-            </p>
+            <input type="submit" name="submit" value="Add fruit">
+            
         </form>
     </main>
 </body>
