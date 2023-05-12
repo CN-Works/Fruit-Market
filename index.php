@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adding fruits to market</title>
+    <title>Market</title>
     <link rel="stylesheet" href="./css/styles.css">
     <!-- Title font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas%20Neue">
@@ -17,7 +17,7 @@
     <main class="container">
         <div class="central-box">
             <!-- Title -->
-            <h1 class="main-title">Market</h1>
+            <h1 class="main-title">Fruit Market</h1>
 
             <!-- Global form -->
             <form class="input-section" action="traitement.php" method="post">
