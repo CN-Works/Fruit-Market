@@ -53,7 +53,7 @@ body {
 }
 
 .input-button {
-    /* border: none; */
+    border: none;
     height: 22px;
     width: 80%;
     border-radius: 4px;
@@ -71,6 +71,8 @@ body {
     background-color: #1D3557;
     color: #F1FAEE;
     margin: 15px 0;
-    width: 50%;
+    width: 70%;
+    height: 30px;
+    border-radius: 5px;
     /* Design */
 }
