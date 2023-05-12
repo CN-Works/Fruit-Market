@@ -30,8 +30,9 @@ body {
 
 .main-title {
     font-family: "Oswald", sans-serif;
-    padding: 10px 0;
+    padding: 10px 20px;
     color: #E63946;
+    border-bottom: 3px solid #b5b5b5;
     text-align: center;
     margin-bottom: 15px;
     font-size: 2.5rem;
@@ -60,7 +61,7 @@ body {
     border-color: #1D3557;
     border-width: 1px;
     background-color: #f0f0f0;
-    height: 27px;
+    height: 25px;
     width: 95%;
     border-radius: 4px;
     margin: 3px 0;
