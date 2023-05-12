@@ -15,7 +15,7 @@
     <main class="container">
         <div class="central-box">
             <!-- Title -->
-            <h1 class="main-title">Add a fruit !</h1>
+            <h1 class="main-title">Insert a fruit !</h1>
 
             <!-- Global form -->
             <form class="input-section" action="traitement.php" method="post">
@@ -38,7 +38,7 @@
                 </div>
 
                 <!-- Submit button -->
-                <input class="submit-button" type="submit" name="submit" value="Add fruit">
+                <input class="submit-button" type="submit" name="submit" value="Add to the list">
                 
             </form>
         </div>
