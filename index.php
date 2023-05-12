@@ -28,7 +28,7 @@
                 <!-- Setting a price -->
                 <div class="inputs">
                     <p class="input-title">Fruit price :</p>
-                    <input class="input-button" type="number" step="any" name="price">
+                    <input class="input-button" type="number" min="0" step="any" name="price">
                 </div>
 
                 <!-- Choosing a quantity -->
