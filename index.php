@@ -15,7 +15,7 @@
     <main class="container">
         <div class="central-box">
             <!-- Title -->
-            <h1 class="main-title">Insert a fruit !</h1>
+            <h1 class="main-title">Market</h1>
 
             <!-- Global form -->
             <form class="input-section" action="traitement.php" method="post">
