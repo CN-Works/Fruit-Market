@@ -72,14 +72,20 @@ body {
     background-color: #fcfcfc;
 }
 
+.input-button:focus {
+    outline: none;
+    border-width: 2px;
+    border-color: #E63946;
+}
+
 /* Text, number inner padding */
 input[type=text] {
-    padding: 0 5px;
+    padding: 0 7px;
     color: #36609a;
 }
 
 input[type=number] {
-    padding: 0 5px;
+    padding: 0 7px;
     color: #36609a;
 }
 
