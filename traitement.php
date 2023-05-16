@@ -12,10 +12,10 @@
         if ($name && $price && $quantity) {
             // Stacking in array
             $new_fruit = array(
-                "name" = $name,
-                "price" = $price,
-                "quantity" = $quantity,
-                "total" = $price*$quantity,
+                "name" => $name,
+                "price" => $price,
+                "quantity" => $quantity,
+                "total" => $price*$quantity,
             );
 
             // Saving the new product in session
