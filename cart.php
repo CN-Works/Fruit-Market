@@ -25,7 +25,7 @@
                     "<p class='no-cart-text'>There are no items in the cart</p>";
 
                 } else {
-                    echo    "<h2 class='cart-title'>My shopping cart</h2>",
+                    echo    "<p class='cart-title'>My shopping cart</p>",
                             "<table class='table-main'>",
                                 "<thead>",
                                     "<tr>",
