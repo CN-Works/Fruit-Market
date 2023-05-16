@@ -25,6 +25,7 @@
                     "<p class='no-cart-text'>There are no items in the cart</p>";
 
                 } else {
+                    $total = 0;
                     echo    "<p class='cart-title'>My shopping cart</p>",
                             "<table class='table-main'>",
                                 "<thead>",
@@ -47,9 +48,13 @@
                                     "<td class='quantity'>".$product["quantity"]."</td>",
                                     "<td class='total'>".number_format($product["total"],2,",")."$</td>",
                                 "</tr>";
+                        $total += $product["total"];
                     }
 
-                    echo    "</tbody>",
+                    echo    "<tr>",
+                                "<td colspan=5 class='cart-total'>Total : ".number_format($total,2,",")."$</td>",
+                            "</tr>",
+                            "</tbody>",
                             "</table>";
                 }
             ?>
