@@ -10,6 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All fruits - Market</title>
     <link rel="stylesheet" href="./css/cart.css">
+    <!-- Adding a new font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas%20Neue">
 </head>
 <body>
     <main class="container">

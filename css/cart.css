@@ -55,14 +55,14 @@ body {
 
 
 th {
-    height: 35px;
+    height: 40px;
     width: 50px;
     text-align: center;
 }
 
 td {
     /* use to center */
-    height: 35px;
+    height: 40px;
     padding: 0 15px;
     text-align: center;
 }
