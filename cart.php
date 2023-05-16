@@ -43,9 +43,9 @@
                         echo    "<tr>",
                                     "<td class='number'>".$index."</td>",
                                     "<td class='name'>".$product["name"]."</td>",
-                                    "<td class='price'>".$product["price"]."$</td>",
+                                    "<td class='price'>".number_format($product["price"],2,",")."$</td>",
                                     "<td class='quantity'>".$product["quantity"]."</td>",
-                                    "<td class='total'>".$product["total"]."$</td>",
+                                    "<td class='total'>".number_format($product["total"],2,",")."$</td>",
                                 "</tr>";
                     }
 
