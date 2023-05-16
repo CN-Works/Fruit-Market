@@ -42,6 +42,7 @@
                 <!-- Submit button -->
                 <input class="submit-button" type="submit" name="submit" value="Add to the list">
                 
+                <a class="cart-link" href="cart.php">See cart</a>
             </form>
         </div>
     </main>

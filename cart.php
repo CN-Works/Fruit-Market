@@ -58,6 +58,7 @@
                             "</table>";
                 }
             ?>
+            <a class="index-link" href="index.php">Add more fruits</a>
         </div>
     </main> 
 </body>
