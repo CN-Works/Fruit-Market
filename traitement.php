@@ -19,7 +19,7 @@
             );
 
             // Saving the new product in session
-            $_SESSION["products"][] = $new_fruit;
+            $_SESSION["cart"][] = $new_fruit;
         }
     }
 
