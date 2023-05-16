@@ -71,28 +71,28 @@ th {
 }
 
 th:hover {
-    background-color: #92b3e2;
+    background-color: #9abdef;
 }
 
 /* Hovering table title */
 body:has(#number:hover) .number {
-    background-color: #92b3e2;
+    background-color: #9abdef;
 }
 
 body:has(#name:hover) .name {
-    background-color: #92b3e2;
+    background-color: #9abdef;
 }
 
 body:has(#price:hover) .price {
-    background-color: #92b3e2;
+    background-color: #9abdef;
 }
 
 body:has(#quantity:hover) .quantity {
-    background-color: #92b3e2;
+    background-color: #9abdef;
 }
 
 body:has(#total:hover) .total {
-    background-color: #92b3e2;
+    background-color: #9abdef;
 }
 
 td {
