@@ -14,12 +14,41 @@
 <body>
     <main class="container">
         <div class="central-box">
-            <p>Si tu vois ça c'est que ça marche (vite fait)</p>
-            <!-- <pre>
-                <?php
-                    var_dump($_SESSION);
-                ?>
-            </pre> -->
+            <?php
+                // Check if the cart is empty or not
+                if ( !isset($_SESSION["cart"]) || empty($_SESSION["cart"]) ) {
+
+                    // Adding a message with a cross
+                    echo "<img class='no-cart-image' src='./img/cross.png'>". 
+                    "<p class='no-cart-text'>There are no items in the cart</p>";
+
+                } else {
+                    echo    "<table>",
+                                "<thead>",
+                                    "<tr>",
+                                        "<th class='table-header-title'>#</th>",
+                                        "<th class='table-header-title'>Name</th>",
+                                        "<th class='table-header-title'>Price</th>",
+                                        "<th class='table-header-title'>Quantity</th>",
+                                        "<th class='table-header-title'>Total</th>",
+                                    "</tr>",
+                                "</thead>",
+                                "<tbody>";
+                    
+                    foreach($_SESSION["cart"] as $index => $product) {
+                        echo    "<tr>",
+                                    "<td>".$index."</td>",
+                                    "<td>".$product["name"]."</td>",
+                                    "<td>".$product["price"]."</td>",
+                                    "<td>".$product["quantity"]."</td>",
+                                    "<td>".$product["total"]."</td>",
+                                "</tr>";
+                    }
+
+                    echo    "</tbody>",
+                            "</table>";
+                }
+            ?>
         </div>
     </main> 
 </body>
