@@ -128,12 +128,12 @@ td:hover {
 }
 
 .index-link {
-    margin-top: 30px;
+    margin-top: 15px;
     height: 20px;
     width: 150px;
     color: inherit;
     text-align: center;
     text-decoration: none;
     color: #E63946;
-    font-size: 1.0rem;
+    font-size: 1rem;
 }
