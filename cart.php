@@ -25,12 +25,13 @@
                     "<p class='no-cart-text'>There are no items in the cart</p>";
 
                 } else {
-                    echo    "<table class='table-main'>",
+                    echo    "<h2 class='cart-title'>My shopping cart</h2>",
+                            "<table class='table-main'>",
                                 "<thead>",
                                     "<tr>",
                                         "<th class='table-header-title'>#</th>",
                                         "<th class='table-header-title'>Name</th>",
-                                        "<th class='table-header-title'>Price</th>",
+                                        "<th class='table-header-title'>Price/unit</th>",
                                         "<th class='table-header-title'>Quantity</th>",
                                         "<th class='table-header-title'>Total</th>",
                                     "</tr>",
