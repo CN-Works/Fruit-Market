@@ -29,11 +29,11 @@
                             "<table class='table-main'>",
                                 "<thead>",
                                     "<tr>",
-                                        "<th class='table-header-title id'>#</th>",
-                                        "<th class='table-header-title name'>Name</th>",
-                                        "<th class='table-header-title price'>Price/unit</th>",
-                                        "<th class='table-header-title quantity'>Quantity</th>",
-                                        "<th class='table-header-title total'>Total</th>",
+                                        "<th id='number' class='table-header-title'>#</th>",
+                                        "<th id='name' class='table-header-title'>Name</th>",
+                                        "<th id='price' class='table-header-title'>Price/unit</th>",
+                                        "<th id='quantity' class='table-header-title'>Quantity</th>",
+                                        "<th id='total' class='table-header-title'>Total</th>",
                                     "</tr>",
                                 "</thead>",
                                 "<tbody>";
@@ -41,7 +41,7 @@
                     // Adding items
                     foreach($_SESSION["cart"] as $index => $product) {
                         echo    "<tr>",
-                                    "<td class='id'>".$index."</td>",
+                                    "<td class='number'>".$index."</td>",
                                     "<td class='name'>".$product["name"]."</td>",
                                     "<td class='price'>".$product["price"]."$</td>",
                                     "<td class='quantity'>".$product["quantity"]."</td>",
