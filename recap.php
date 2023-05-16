@@ -13,4 +13,7 @@
 <body>
     
 </body>
+    <?php
+        echo "<pre>".var_dump($_SESSION)."</pre>";
+    ?>
 </html>
