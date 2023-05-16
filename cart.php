@@ -23,7 +23,7 @@
                     "<p class='no-cart-text'>There are no items in the cart</p>";
 
                 } else {
-                    echo    "<table>",
+                    echo    "<table class='table-main'>",
                                 "<thead>",
                                     "<tr>",
                                         "<th class='table-header-title'>#</th>",
@@ -35,6 +35,7 @@
                                 "</thead>",
                                 "<tbody>";
                     
+                    // Adding items
                     foreach($_SESSION["cart"] as $index => $product) {
                         echo    "<tr>",
                                     "<td>".$index."</td>",
