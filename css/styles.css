@@ -33,7 +33,7 @@ body {
     font-family: "Bebas Neue", sans-serif;
     padding: 10px 20px;
     color: #E63946;
-    border-bottom: 2px solid #b5b5b5;
+    border-bottom: 2px solid #8c8c8c;
     text-align: center;
     margin-bottom: 15px;
     font-size: 2.6rem;
@@ -61,7 +61,7 @@ body {
 .input-button {
     border-style: solid;
     border-color: #1D3557;
-    border-width: 1px;
+    border-width: 2px;
     background-color: #f0f0f0;
     height: 25px;
     width: 95%;
@@ -110,7 +110,7 @@ input[type=number] {
     /* Border*/
     border-style: solid;
     border-color: #1D3557;
-    border-width: 1px;
+    border-width: 2px;
     /* Design */
     background-color: #eaeaea;
     width: 70%;
@@ -127,4 +127,14 @@ input[type=number] {
     color: #eaeaea;
     border: none;
     transform: scale(1.04);
+}
+
+.cart-link {
+    height: 25px;
+    width: 100px;
+    color: inherit;
+    text-align: center;
+    text-decoration: none;
+    color: #E63946;
+    font-size: 1rem;
 }

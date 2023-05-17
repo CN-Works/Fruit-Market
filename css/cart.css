@@ -1,0 +1,139 @@
+* {
+    font-family: "Roboto", sans-serif;
+    padding : 0;
+    margin : 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1D3557;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.central-box {
+    background-color: #e9e9e9;
+    height: 500px;
+    width: 800px;
+    padding: 2px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+}
+
+/* No cart */
+
+.no-cart-image {
+    width: 125px;
+    margin: 30px 0;
+    transition: transform 1s;
+}
+
+body:has(.central-box:hover) .no-cart-image {
+    transform: rotate(180deg);
+}
+
+.no-cart-text {
+    font-size: 1.4rem;
+    color: #E63946;
+    margin: 30px 0;
+}
+
+/* ---------- */
+.cart-title {
+    font-family: "Bebas Neue", sans-serif;
+    color: #E63946;
+    margin-bottom: 50px;
+    font-size: 3.0rem;
+    padding: 10px 15px;
+    border-bottom: 2px solid #8c8c8c;
+}
+
+/* Table */
+
+.table-main {
+    width: 90%;
+    border: #1D3557;
+    border-style: solid;
+    border-width: 3px;
+    border-spacing: 4px;
+    border-radius: 5px;
+}
+
+
+th {
+    height: 40px;
+    width: 50px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+th:hover {
+    background-color: #9abdef;
+}
+
+/* Hovering table title */
+body:has(#number:hover) .number {
+    background-color: #9abdef;
+}
+
+body:has(#name:hover) .name {
+    background-color: #9abdef;
+}
+
+body:has(#price:hover) .price {
+    background-color: #9abdef;
+}
+
+body:has(#quantity:hover) .quantity {
+    background-color: #9abdef;
+}
+
+body:has(#total:hover) .total {
+    background-color: #9abdef;
+}
+
+td {
+    /* use to center */
+    height: 40px;
+    padding: 0 15px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+td:hover {
+    background-color: #E63946;
+    color: #e9e9e9;
+}
+
+.cart-total {
+    height: 50px;
+    text-align: center;
+    border-style: solid;
+    border-color: #1D3557;
+    border-width: 2px;
+}
+
+.cart-total:hover {
+    background-color: #1D3557;
+    color: #e9e9e9;
+}
+
+.index-link {
+    margin-top: 15px;
+    height: 20px;
+    width: 150px;
+    color: inherit;
+    text-align: center;
+    text-decoration: none;
+    color: #E63946;
+    font-size: 1rem;
+}
