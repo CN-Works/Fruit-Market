@@ -1,7 +1,7 @@
 <?php
     session_start();
 
-
+    // "+" button - Adding item quantity
     if (isset($_POST["add-item"])) {
         // Checking in session -> cart the item key by form value. It will return an array with all item (like quantity)
         $item_amount = $_SESSION["cart"][$_POST["add-item"]]["quantity"];
@@ -11,6 +11,20 @@
             $_SESSION["cart"][$_POST["add-item"]]["quantity"] = $_SESSION["cart"][$_POST["add-item"]]["quantity"] + 1;
         }
     }
+
+    if (isset($_POST["remove-item"])) {
+        // Same, checking item amount
+        $item_amount = $_SESSION["cart"][$_POST["remove-item"]]["quantity"];
+
+        if ($item_amount > 1) {
+            // Reducing quantity by 1 when greater than 1.
+            $_SESSION["cart"][$_POST["remove-item"]]["quantity"] = $_SESSION["cart"][$_POST["remove-item"]]["quantity"] - 1;
+        } else {
+            // When amount is 1, it need to delete item from cart (seems logic)
+            unset($_SESSION["cart"][$_POST["remove-item"]]);
+        }
+    }
+
 ?>
 
 <!DOCTYPE html>
