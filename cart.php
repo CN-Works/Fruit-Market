@@ -18,7 +18,7 @@
     }
 
     //
-    //  Events
+    //  "Events" (post)
     //
 
     // "+" button - Adding item quantity
@@ -80,6 +80,7 @@
                                         "<th id='price' class='table-header-title'>Price/unit</th>",
                                         "<th id='quantity' class='table-header-title'>Quantity</th>",
                                         "<th id='total' class='table-header-title'>Total</th>",
+                                        "<th id='action'>Action</th>",
                                     "</tr>",
                                 "</thead>",
                                 "<tbody>";
@@ -98,12 +99,17 @@
                                         </form>
                                     </td>",
                                     "<td class='total'>".number_format($product["total"],2,",")."$</td>",
+                                    "<td class='remove-button-part'>
+                                        <form class='delete-button-form' action='cart.php' method='post'>
+                                            <button class='button-item' type='submit' name='delete-item' value=$index>X</button>
+                                        </form>
+                                    </td>",
                                 "</tr>";
                         $total += $product["total"];
                     }
 
                     echo    "<tr>",
-                                "<td colspan=5 class='cart-total'>Total : ".number_format($total,2,",")."$</td>",
+                                "<td colspan=6 class='cart-total'>Total : ".number_format($total,2,",")."$</td>",
                             "</tr>",
                             "</tbody>",
                             "</table>";
