@@ -1,6 +1,26 @@
 <?php
     session_start();
 
+    //
+    //  Functions
+    //
+
+    function RemoveItemFromCart($item_id) {
+        unset($_SESSION["cart"][$item_id]);
+    }
+
+    function AddItemQuantity($item_id, $item_amount) {
+        $_SESSION["cart"][$item_id]["quantity"] = $_SESSION["cart"][$item_id]["quantity"] + $item_amount;
+    }
+
+    function RemoveItemQuantity($item_id, $item_amount) {
+        $_SESSION["cart"][$item_id]["quantity"] = $_SESSION["cart"][$item_id]["quantity"] - $item_amount;
+    }
+
+    //
+    //  Events
+    //
+
     // "+" button - Adding item quantity
     if (isset($_POST["add-item"])) {
         // Checking in session -> cart the item key by form value. It will return an array with all item (like quantity)
@@ -8,7 +28,7 @@
 
         // Just checking if it need to remove from cart or reduce by one
         if ($item_amount >= 1) {
-            $_SESSION["cart"][$_POST["add-item"]]["quantity"] = $_SESSION["cart"][$_POST["add-item"]]["quantity"] + 1;
+            AddItemQuantity($_POST["add-item"],1);
         }
     }
 
@@ -18,10 +38,10 @@
 
         if ($item_amount > 1) {
             // Reducing quantity by 1 when greater than 1.
-            $_SESSION["cart"][$_POST["remove-item"]]["quantity"] = $_SESSION["cart"][$_POST["remove-item"]]["quantity"] - 1;
+            RemoveItemQuantity($_POST["remove-item"], 1);
         } else {
             // When amount is 1, it need to delete item from cart (seems logic)
-            unset($_SESSION["cart"][$_POST["remove-item"]]);
+            RemoveItemFromCart($_POST["remove-item"]);
         }
     }
 
