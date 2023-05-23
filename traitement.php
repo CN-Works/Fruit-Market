@@ -18,9 +18,6 @@
     if (isset($_POST["submit"])) {
         
         // Checking user inputs using filters, avoid xss & code injections
-        xss , comment ça fonctionne et les dangers 
-        autre moyens que les filter input 
-        comment marchent les filter input
         $name = filter_input(INPUT_POST, "name",FILTER_SANITIZE_STRING);
         $price = filter_input(INPUT_POST,"price",FILTER_VALIDATE_FLOAT,FILTER_FLAG_ALLOW_FRACTION);
         $quantity = filter_input(INPUT_POST,"quantity",FILTER_VALIDATE_INT);
