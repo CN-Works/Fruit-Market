@@ -42,7 +42,11 @@
                 <!-- Submit button -->
                 <input class="submit-button" type="submit" name="submit" value="Add to the list">
                 
-                <a class="cart-link" href="cart.php">See cart</a>
+                <a class="cart-link" href="cart.php">See cart <?php
+                    if (isset($_SESSION["cart"])) {
+                        echo "(".count($_SESSION["cart"])." items)";
+                    }
+                    ?></a>
             </form>
         </div>
     </main>
