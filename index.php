@@ -42,11 +42,11 @@
                 <!-- Submit button -->
                 <input class="submit-button" type="submit" name="submit" value="Add to the list">
                 
-                <a class="cart-link" href="cart.php">See cart <?php
+                <a class="cart-link" href="cart.php">See cart<?php
                     // Checking if "cart" table exists or if cart has more than 0 (so 1) items available
                     if (isset($_SESSION["cart"]) && count($_SESSION["cart"]) > 0) {
                         // returns a string to alert that there are some items in cart
-                        echo "(".count($_SESSION["cart"])." items)";
+                        echo " - ".count($_SESSION["cart"])." items";
                     }
                     ?></a>
             </form>

@@ -121,9 +121,9 @@
                             "</table>";
                 }
             ?>
-            <a class="index-link" href="index.php">Add more fruits <?php
+            <a class="index-link" href="index.php">Add more fruits<?php
                     if (isset($_SESSION["cart"]) && count($_SESSION["cart"]) > 0) {
-                        echo "(".count($_SESSION["cart"])." items)";
+                        echo " - ".count($_SESSION["cart"])." items";
                     }
                     ?></a>
         </div>
