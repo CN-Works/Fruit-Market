@@ -1,9 +1,10 @@
 <?php
     session_start();
 
+    // Getting post request data
     if (isset($_POST["submit"])) {
         
-        // Checking inputs using filters
+        // Checking user inputs using filters
         $name = filter_input(INPUT_POST, "name",FILTER_SANITIZE_STRING);
         $price = filter_input(INPUT_POST,"price",FILTER_VALIDATE_FLOAT,FILTER_FLAG_ALLOW_FRACTION);
         $quantity = filter_input(INPUT_POST,"quantity",FILTER_VALIDATE_INT);
@@ -18,7 +19,7 @@
                 "total" => $price*$quantity,
             );
 
-            // Saving the new product in session
+            // Saving the new product data in session
             $_SESSION["cart"][] = $new_fruit;
         }
     }
