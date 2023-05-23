@@ -137,3 +137,51 @@ td:hover {
     color: #E63946;
     font-size: 1rem;
 }
+
+.quantity {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-add {
+    color: #1D3557;
+    height: 25px;
+    width: 25px;
+    border: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.3rem;
+    border-radius: 50%;
+
+    transition: all, 0.5s;
+}
+
+.button-add:hover {
+    background: #66db52;
+    color: #ffffff;
+}
+
+.button-remove {
+    color: #1D3557;
+    height: 25px;
+    width: 25px;
+    border: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.3rem;
+    border-radius: 50%;
+
+    transition: all, 0.5s;
+}
+
+.button-remove:hover {
+    background: #ff8787;
+    color: #ffffff;
+}
