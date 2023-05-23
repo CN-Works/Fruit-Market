@@ -1,5 +1,9 @@
 <?php
     session_start();
+
+    if (isset($_POST["add-item"])) {
+
+    }
 ?>
 
 <!DOCTYPE html>
@@ -45,7 +49,7 @@
                                     "<td class='number'>".$index."</td>",
                                     "<td class='name'>".$product["name"]."</td>",
                                     "<td class='price'>".number_format($product["price"],2,",")."$</td>",
-                                    "<td class='quantity'>".$product["quantity"]."</td>",
+                                    "<td class='quantity'><button class='button-remove' type='submit' name='remove-item' value=$index>-</button>".$product["quantity"]."<button class='button-add' type='submit' name='add-item' value=$index>+</button></td>",
                                     "<td class='total'>".number_format($product["total"],2,",")."$</td>",
                                 "</tr>";
                         $total += $product["total"];
