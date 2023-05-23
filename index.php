@@ -43,7 +43,7 @@
                 <input class="submit-button" type="submit" name="submit" value="Add to the list">
                 
                 <a class="cart-link" href="cart.php">See cart <?php
-                    if (isset($_SESSION["cart"])) {
+                    if (isset($_SESSION["cart"]) && count($_SESSION["cart"]) > 0) {
                         echo "(".count($_SESSION["cart"])." items)";
                     }
                     ?></a>

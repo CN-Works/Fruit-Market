@@ -144,7 +144,7 @@ td:hover {
 .index-link {
     margin-top: 15px;
     height: 20px;
-    width: 150px;
+    width: 250px;
     color: inherit;
     text-align: center;
     text-decoration: none;
@@ -160,7 +160,7 @@ td:hover {
 
 .quantity:hover {
     background: #e9e9e9;
-    border: 3px solid #E63946;
+    border: 2px solid #E63946;
     color: #1D3557;
 }
 
