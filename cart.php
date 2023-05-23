@@ -32,6 +32,7 @@
         }
     }
 
+    // "-" button - Remove one unit
     if (isset($_POST["remove-item"])) {
         // Same, checking item amount
         $item_amount = $_SESSION["cart"][$_POST["remove-item"]]["quantity"];
@@ -43,6 +44,11 @@
             // When amount is 1, it need to delete item from cart (seems logic)
             RemoveItemFromCart($_POST["remove-item"]);
         }
+    }
+
+    // "X" button - Remove item from cart
+    if (isset($_POST["delete-item"])) {
+        RemoveItemFromCart($_POST["delete-item"]);
     }
 
 ?>
