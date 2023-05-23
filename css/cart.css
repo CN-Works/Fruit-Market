@@ -76,7 +76,7 @@ th {
     border-radius: 3px;
 }
 
-th:hover {
+.table-header-title:hover {
     background-color: #9abdef;
 }
 
@@ -100,6 +100,16 @@ body:has(#quantity:hover) .quantity {
 body:has(#total:hover) .total {
     background-color: #9abdef;
 }
+
+#action:hover {
+    background-color: #E63946;
+    color: #ffffff;
+}
+
+body:has(#action:hover) .remove-button-part {
+    background-color: #4a4a4a;
+}
+
 
 td {
     /* use to center */
@@ -204,3 +214,7 @@ td:hover {
     background: #ff8787;
     color: #ffffff;
 }
+
+/* Delete Item Button */
+
+.
